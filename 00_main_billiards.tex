@@ -1,0 +1,105 @@
+% Template for package SVJour3
+% Springer journals, Heidelberg, 2010/09/16
+
+\RequirePackage{fix-cm}
+\documentclass{svjour3}
+% onecolumn (standard format)
+%\documentclass[smallcondensed]{svjour3}
+% onecolumn (ditto)
+%\documentclass[smallextended]{svjour3}
+% onecolumn (second format)
+%\documentclass[twocolumn]{svjour3}
+% twocolumn
+\smartqed  % flush right qed marks to end of proof
+%\usepackage{amsbsy}
+%, amsmath,amsfonts,amsthm,amscd,amssymb,latexsym}
+\usepackage{graphicx}
+
+\usepackage{mathspec}
+\usepackage{float}
+% use Times fonts if available on your TeX system
+% \usepackage{mathptmx}
+\usepackage{latexsym}
+
+\usepackage{caption}
+\usepackage{subcaption}
+%\usepackage{svg}
+% definitions here
+% \newcommand{}{}
+%\theoremstyle{definition}
+\usepackage{color,enumitem,graphicx}
+ 
+
+\newtheorem{observation}{Observation}
+%\newtheorem{lemma}[theorem]{Lemma}
+%\newtheorem{corollary}[theorem]{Corollary}
+
+\usepackage{hyperref}
+ 
+\journalname{The Mathematical Intelligencer}
+%
+\begin{document}
+
+\title{Can the Elliptic Billiard Still Suprise Us?}
+
+\author{Dan Reznik \and Ronaldo Garcia \and Jair Koiller}
+
+\authorrunning{Reznik, Garcia and Koiller}
+
+\institute{D. Reznik \at Upper West Soluções \email{dreznik@gmail.com} \and
+R. Garcia \at Universidade Federal de Goiás \email{ragarcia@ufg.br} \and 
+J. Koiller \at Universidade Federal de Juiz de Fora \email{jairkoiller@gmail.com}}
+
+\date{Received: date / Accepted: date}
+
+\maketitle
+
+\input{01_abstract}
+
+\section{Introduction}
+\label{intro}
+\input{01_introduction}
+
+\section{Kinemagic Loci}
+\label{sec:loci}
+\input{02_elliptic}
+
+\section{Can a Locus be a Point?}
+\label{sec:mitten}
+\input{03_mittenpunkt}
+
+\section{Can this Ratio be an Invariant?}
+\label{sec:cosines}
+\input{04_r_over_R}
+
+\section{Can a Locus be a Circle?}
+\label{sec:circles}
+\input{05_circles}
+
+\section{Monge Miracles: onward to $N>3$}
+\label{sec:generalize}
+\input{06_generalize}
+
+\section{Conclusion}
+\label{sec:conclusion}
+\input{08_conclusion}
+
+\input{10_acknowledgements}
+
+\appendix
+\section{Appendix: Further Locus Phenomena}
+\label{sec:locus-phenomena}
+\input{07b_appendix_locus.tex}
+
+\section{Appendix: Spatial Averages}
+\label{sec:space-averages}
+\input{07a_appendix_spatial_integrals.tex}
+
+% BibTeX users please use one of
+
+\bibliographystyle{spmpsci}  % mathematics and 
+
+\bibliography{elliptic_billiards_v2,media}   % name your BibTeX data base
+
+\end{document}
+% end of file template.tex
